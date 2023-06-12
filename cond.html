@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificação de Vogal ou Consoante</title>
+</head>
+<body>
+  <h2>Vogal ou Consoante</h2>
+  <label for="letra">Digite uma letra: </label>
+  <input type="text" id="letra">
+  <button onclick="verificar()">Verificar</button>
+  <div id="resp"></div>
+  <script>
+      var letra = document.getElementById("letra")
+      var resp = document.getElementById("resp")
+  
+      if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+        resp.innerHTML = <p>"A letra digitada é uma vogal."</p>
+      } 
+      else {
+        resp.innerHTML = <p>"A letra digitada é uma consoante."</p>
+      }
+    
+  </script>
+</body>
+</html>

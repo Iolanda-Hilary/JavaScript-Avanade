@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media de Alunos</title>
+</head>
+<body>
+  <h2>Calculadora de médias</h2>
+  <label for="n1">Digite a primeira nota: </label>
+  <input type="text" id="n1"> <br>
+  <label for="n2">Digite a segunda nota: </label>
+  <input type="text" id="n2"> <br>
+  <button onclick="calcularMedia()">Verificar</button>
+  <script>
+   
+      var nota1 = parseFloat(document.getElementById("n1").value);
+      var nota2 = parseFloat(document.getElementById("n2").value);
+      
+      var media = (nota1 + nota2) / 2;
+    
+      
+        if (media >= 7) {
+          resp.innerHTML = "<p>Aluno aprovado</p>";
+        } else {
+          resp.innerHTML = "<p>Aluno reprovado</p>";
+        }
+      
+    
+  </script>
+</body>
+</html>
